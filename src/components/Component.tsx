@@ -1,7 +1,7 @@
 import Image from "next/image";
 import React from "react";
 
-const Components = () => {
+const Component = () => {
   return (
     <div>
       <div className="flex justify-center space-x-4">
@@ -17,4 +17,4 @@ const Components = () => {
   );
 };
 
-export default Components;
+export default Component;
