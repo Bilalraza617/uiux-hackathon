@@ -1,6 +1,6 @@
-import Image from "next/image";
 import Link from "next/link";
 import React from "react";
+import { CiSearch } from "react-icons/ci";
 import { MdOutlineKeyboardArrowDown } from "react-icons/md";
 
 const Header = () => {
@@ -33,15 +33,9 @@ const Header = () => {
           </li>
         </ul>
       </div>
-      <div className="bg-[#FB2E86] flex items-center pr-1">
+      <div className="bg-[#FB2E86] text-white flex items-center pr-1">
         <input type="text" className="py-2 border mr-2" />
-        <Image
-          src="/search.png"
-          width={40}
-          height={40}
-          className=" w-6 bg-[#FB2E86] h-6 mr-2"
-          alt="search"
-        />
+        <CiSearch />
       </div>
     </div>
   );
