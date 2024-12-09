@@ -45,7 +45,7 @@ const TopHeader = () => {
           </li>
           <li>
             <Link href="#" className="">
-              <PiShoppingCartSimpleLight className="text-lg font-bold" />
+              <PiShoppingCartSimpleLight className="text-xl font-e" />
             </Link>
           </li>
         </ul>
