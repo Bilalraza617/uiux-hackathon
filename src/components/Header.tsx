@@ -15,8 +15,27 @@ const Header = () => {
               <MdOutlineKeyboardArrowDown />
             </Link>
           </li>
-          <li>
-            <Link href="#">Pages</Link>
+          <li className="relative parent">
+            Pages
+            <ul className="absolute transform parent border z-10 bg-white w-[180px] flex flex-col items-start gap-2 m-2 px-3 py-2 rounded-md left-[-80px]">
+              {[
+                "Single Blog",
+                "Hekto Demo",
+                "Product Details",
+                "Order Completed",
+                "Shopping Curt",
+                "Shop List",
+                "Shop Left Sidebar",
+                "SGrid Default",
+                "About us",
+                "My account",
+                "FAQ",
+              ].map((text: string, index) => (
+                <li key={index} className="list p-2">
+                  <Link href="">{text}</Link>
+                </li>
+              ))}
+            </ul>
           </li>
           <li>
             {/* <Link href="/shop-grid">Products</Link> */}
