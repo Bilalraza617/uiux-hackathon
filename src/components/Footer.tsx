@@ -5,8 +5,8 @@ import React from "react";
 export default function Footer() {
   return (
     <div className="bg-[#EEEFFB]">
-      <footer className="bg-white py-8">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <footer className=" p-2 items-center  m-auto">
+        <div className="p-6 w-[90%] m-auto">
           <div className="flex justify-between items-center">
             <div>
               <h3 className="text-xl font-semibold mb-2">Hekto</h3>
@@ -28,10 +28,10 @@ export default function Footer() {
                 17 Princess Road, London, Greater London NW1 8JR, UK
               </p>
             </div>
-            <div className="flex space-x-8">
+            <div className="flex items-center justify-between w-[60%]">
               <div>
                 <h3 className="text-xl font-semibold mb-2">Categories</h3>
-                <ul>
+                <ul className="font-thin">
                   <li>Laptops & Computers</li>
                   <li>Cameras & Photography</li>
                   <li>Smart Phones & Tablets</li>
@@ -41,7 +41,7 @@ export default function Footer() {
               </div>
               <div>
                 <h3 className="text-xl font-semibold mb-2">Customer Care</h3>
-                <ul>
+                <ul className="font-thin">
                   <li>My Account</li>
                   <li>Discount</li>
                   <li>Returns</li>
@@ -51,7 +51,7 @@ export default function Footer() {
               </div>
               <div>
                 <h3 className="text-xl font-semibold mb-2">Pages</h3>
-                <ul>
+                <ul className="font-thin">
                   <li>Blog</li>
                   <li>Browse the Shop</li>
                   <li>Category</li>
@@ -62,19 +62,19 @@ export default function Footer() {
               </div>
             </div>
           </div>
-          <div className="mt-8 flex justify-between items-center">
-            <p className="text-gray-500">&copy;Webecy - All Rights Reserved.</p>
-            <div className="flex space-x-4">
-              <Link href="#" className="">
-                <Image src="/F1.png" height={20} width={20} alt="img" />
-              </Link>
-              <Link href="#" className="">
-                <Image src="/F2.png" height={20} width={20} alt="img" />
-              </Link>
-              <Link href="#" className="">
-                <Image src="/F3.png" height={20} width={20} alt="img" />
-              </Link>
-            </div>
+        </div>
+        <div className="mt-8 flex justify-between items-center w-[80%] m-auto bg-[#E7E4F8]">
+          <p className="text-gray-500">&copy;Webecy - All Rights Reserved.</p>
+          <div className="flex space-x-4">
+            <Link href="#" className="">
+              <Image src="/F1.png" height={20} width={20} alt="img" />
+            </Link>
+            <Link href="#" className="">
+              <Image src="/F2.png" height={20} width={20} alt="img" />
+            </Link>
+            <Link href="#" className="">
+              <Image src="/F3.png" height={20} width={20} alt="img" />
+            </Link>
           </div>
         </div>
       </footer>
