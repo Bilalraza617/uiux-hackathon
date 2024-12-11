@@ -2,7 +2,7 @@ import Image from "next/image";
 import React from "react";
 
 const DiscountItem = () => (
-  <div className="w-[90%] m-auto   mt-24">
+  <div className="   mt-24">
     <div className="   p-4">
       <h1 className="text-4xl leading-10  text-center font-extrabold mb-3">
         Discount Item

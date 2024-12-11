@@ -2,30 +2,41 @@ import Image from "next/image";
 import React from "react";
 
 const categories = [
+  { image: "TC1_4" },
+  { image: "L3" },
   { image: "T1" },
-  { image: "T2" },
-  { image: "T3" },
-  { image: "T4" },
+  { image: "TC1_4" },
 ];
 
 const TopCategories = () => (
   <div className="container mx-auto p-4">
     <h1 className="text-3xl font-bold mb-4 text-center">Top Categories</h1>
-    <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4">
+    <div className="flex   justify-center ">
       {categories.map((category, index) => (
-        <div key={index} className="p-4 bg-white rounded shadow-lg text-center">
-          <Image
-            src={`/${category.image}.png`}
-            alt="img"
-            className="w-full h-48 object-cover mb-4"
-            width={300}
-            height={300}
-          />
-          <h3 className="text-lg font-medium">Mini LCW Chair</h3>
-          <div className="mt-2 text-gray-500">$$56.00</div>
-          <button className="mt-4 bg-green-500 text-white py-2 px-4 rounded">
+        <div
+          key={index}
+          className="w-[269px] h-[345px] relative flex flex-col items-center justify-center  gap-5"
+        >
+          <div
+            className="h-[200px] w-[200px] relative border border-[#F6F7FB] bg-[#F6F7FB] flex justify-center rounded-full items-center pt-5 "
+            style={{ boxShadow: "0px 0px 20px 5px #F6F7FB" }}
+          >
+            <Image
+              src={`/${category.image}.png`}
+              alt="img"
+              className=" object-cover mb-4 "
+              width={150}
+              height={150}
+            />
+          </div>
+          <button className="bg-green-500 absolute bottom-[30%] left-[32%] text-white text-sm px-4 py-1 rounded shadow-md">
             View Shop
           </button>
+
+          <div className="text-center">
+            <h3 className="text-xlg font-semibold">Mini LCW Chair</h3>
+            <p>$56.00</p>
+          </div>
         </div>
       ))}
     </div>

@@ -9,44 +9,50 @@ const blogPosts = [
 ];
 
 const LatestBlog = () => (
-  <div>
-    <div className="bg-gray-100 py-12">
-      <h2 className="text-3xl font-extrabold text-center text-gray-900">
-        Leatest Blog
-      </h2>
+  <div className="mt-32">
+    <div className=" py-12">
+      <h2 className="text-3xl font-extrabold text-center ">Leatest Blog</h2>
     </div>
 
-    <div className="flex items-center">
+    <div className="flex flex-wrap  gap-10  justify-center items-center">
       {blogPosts.map((data: { image: string; author: string }, index) => (
-        <div key={index} className="flex">
+        <div
+          key={index}
+          className="w-[370px] h-[493px] shadow-lg rounded-lg overflow-hidden"
+        >
           <div>
             <Image
               src={`/${data.image}.png`}
               alt="img"
-              width={500}
-              height={500}
-              className="w-full h-48 object-cover"
+              width={370}
+              height={255}
+              className=" object-cover"
             />
           </div>
-          <div className="p-4">
-            <div className="flex justify-between items-center">
-              <Image src="/pen.png" alt="img" width={10} height={10} />
-              <p className="text-sm text-gray-500">{data.author}</p>
-              <p className="text-sm text-gray-500"></p>
-            </div>
-            <div className="flex items-center">
-              <Image src="/calender.png" alt="img" width={10} height={10} />
-              <span>21 August,2020</span>
+          <div className="p-4 font-semibold">
+            <div className="flex gap-6">
+              <div className="flex gap-1  items-center">
+                <Image src="/pen.png" alt="img" width={12} height={12} />
+                <p>{data.author}</p>
+              </div>
+              <div className="flex gap-1 items-center">
+                <Image src="/calender.png" alt="img" width={10} height={10} />
+                <span>21 August,2020</span>
+              </div>
             </div>
             <h3 className="mt-2 text-lg font-semibold">
-              Top esssential Trends in 2021
+              <span className={index === 1 ? "text-[#FB2E86]" : ""}>
+                Top esssential Trends in 2021
+              </span>
             </h3>
             <p className="mt-2 text-gray-600">
               More off this less hello samlande lied much over tightly circa
               horse taped mightly
             </p>
-            <Link href="#" className="mt-2 inline-block text-blue-500">
-              Read More
+            <Link href="#" className="mt-2 inline-block underline">
+              <span className={index === 1 ? "text-[#FB2E86] underline " : ""}>
+                Read More
+              </span>
             </Link>
           </div>
         </div>

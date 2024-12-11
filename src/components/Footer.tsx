@@ -4,7 +4,7 @@ import React from "react";
 
 export default function Footer() {
   return (
-    <div className="bg-[#EEEFFB]">
+    <div className="bg-[#EEEFFB] mt-32">
       <footer className=" p-2 items-center  m-auto">
         <div className="p-6 w-[90%] m-auto">
           <div className="flex justify-between items-center">

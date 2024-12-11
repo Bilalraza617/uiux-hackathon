@@ -2,12 +2,13 @@ import React from "react";
 import Component from "./Component";
 
 const Banner2 = () => (
-  <div className=" min-h-screen ">
-    <div className="bg-white p-6 rounded-lg shadow-lg w-full max-w-3xl text-center bg-[url('/bg.png')]">
-      <h1 className="text-3xl font-bold mb-4">
-        Get Latest Update By Subscribe Our Newsletter
+  <div className="mt-28 h-[462px]">
+    <div className=" h-full flex flex-col justify-center items-center text-center bg-[url('/bg.png')] bg-cover bg-center">
+      <h1 className="text-4xl font-bold mb-4">
+        Get Latest Update By Subscribe
+        <br /> Our Newsletter
       </h1>
-      <button className="bg-pink-600 text-white py-2 px-4 rounded-md hover:bg-pink-700 mb-4">
+      <button className="bg-[#FB2E86] text-white py-2 px-6 rounded-md">
         Shop Now
       </button>
     </div>
