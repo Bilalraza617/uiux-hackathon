@@ -1,9 +1,9 @@
 import Baner from "@/components/Baner";
 import Banner2 from "@/components/Banner2";
 import DiscountItem from "@/components/DiscountItem";
+import Featuredproducts from "@/components/FeaturedProducts";
 import LatestBlog from "@/components/LatestBlog";
 import LatestProduct from "@/components/LatestProduct";
-import ProductCard from "@/components/ProductCard";
 import Shopex from "@/components/Shopex";
 import TopCategories from "@/components/TopCatefories";
 import Trandingproducts from "@/components/TrandindPraducts";
@@ -58,16 +58,18 @@ export default function Home() {
           <span className="border border-pink-500 w-2 h-2 rotate-45"></span>
         </div>
       </div>
-      <ProductCard />
-      <LatestProduct />
-      <Shopex />
-      <Baner />
-      <Trandingproducts />
-      <DiscountItem />
-      <TopCategories />
-      <Banner2 />
+      <div className="text-[#151875]">
+        <Featuredproducts />
+        <LatestProduct />
+        <Shopex />
+        <Baner />
+        <Trandingproducts />
+        <DiscountItem />
+        <TopCategories />
+        <Banner2 />
 
-      <LatestBlog />
+        <LatestBlog />
+      </div>
     </div>
   );
 }
