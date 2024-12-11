@@ -22,14 +22,14 @@ const Featuredproducts = () => {
         Featured Products
       </h1>
       <div className="">
-        <div className="flex items-center justify-between w-[90%]  m-auto my-10">
+        <div className="flex items-center justify-center gap-7 my-10">
           {item.map((data: { image: string }, index) => {
             return (
               <div
                 key={index}
                 className="w-[270px] h-[361px] shadow-lg rounded"
               >
-                <div className=" w-[270px]  h-[236px] bg-gray-100  rounded">
+                <div className="  h-[236px] bg-gray-100  rounded">
                   <Image
                     src={`/${data.image}.png`}
                     alt={"Product"}
