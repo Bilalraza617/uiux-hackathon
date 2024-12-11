@@ -19,20 +19,20 @@ const Header = () => {
             Pages
             <ul className="absolute transform parent border z-10 bg-white w-[180px] flex flex-col items-start gap-2 m-2 px-3 py-2 rounded-md left-[-80px]">
               {[
-                "Single Blog",
-                "Hekto Demo",
-                "Product Details",
-                "Order Completed",
-                "Shopping Curt",
-                "Shop List",
-                "Shop Left Sidebar",
-                "SGrid Default",
-                "About us",
-                "My account",
-                "FAQ",
-              ].map((text: string, index) => (
+                { text: "Single Blog", link: "single-blog" },
+                { text: "Hackto Demo", link: "hackto-demo" },
+                { text: "Product Details", link: "product-details" },
+                { text: "Order Completed", link: "order-completed" },
+                { text: "Shopping Cart", link: "shopping-cart" },
+                { text: "Shop List", link: "shop-list" },
+                { text: "Shop Left Sidebar", link: "shop-left-sidebar" },
+                { text: "Grid Default", link: "grid-default" },
+                { text: "About us", link: "about-us" },
+                { text: "My account", link: "my-account" },
+                { text: "FAQ", link: "faq" },
+              ].map((text: { text: string; link: string }, index) => (
                 <li key={index} className="list p-2">
-                  <Link href="">{text}</Link>
+                  <Link href={text.link}>{text.text}</Link>
                 </li>
               ))}
             </ul>
