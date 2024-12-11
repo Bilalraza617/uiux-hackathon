@@ -14,7 +14,7 @@ const Blog = () => {
         <div className="w-3/4">
           <div className="post mb-8">
             <Image
-              src="/p1.png"
+              src="/b1.png"
               alt="Post 1"
               className="w-full h-auto mb-4"
               width={500}

@@ -38,7 +38,6 @@ const Header = () => {
             </ul>
           </li>
           <li>
-            {/* <Link href="/shop-grid">Products</Link> */}
             <Link href="/shop-grid">Products</Link>
           </li>
           <li>
@@ -55,7 +54,11 @@ const Header = () => {
       </div>
       <div>
         <div className="bg-[#FB2E86] flex justify-center pr-2 w-[317px] items-center">
-          <input type="text" className="py-2 border mr-2 w-full" width={11} />
+          <input
+            type="text"
+            className="p-2 border mr-2 w-full outline-none"
+            width={11}
+          />
           <CiSearch className="text-white text-3xl " />
         </div>
       </div>
