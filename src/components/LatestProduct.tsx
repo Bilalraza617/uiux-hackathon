@@ -12,7 +12,7 @@ const item = [
 
 const LatestProducts = () => (
   <div>
-    <div className=" p-5">
+    <div className="container mx-auto p-4">
       <h1 className="text-4xl leading-10 text-[#151875] text-center font-extrabold mb-3">
         Leatest Products
       </h1>
@@ -37,7 +37,7 @@ const LatestProducts = () => (
                   <Image
                     src={`/${data.image}.png`}
                     alt="img"
-                    className=" h-full p-10"
+                    className=" h-full "
                     width={400}
                     height={400}
                   />
