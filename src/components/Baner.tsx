@@ -3,36 +3,57 @@ import React from "react";
 
 const Baner = () => {
   return (
-    <div className="flex justify-center items-center min-h-screen bg-gray-100">
-      <div className="bg-white p-6 rounded-lg shadow-lg flex">
-        <div className="mr-6">
-          <Image
-            src="/sofa2.png"
-            alt="Sofa"
-            width={500}
-            height={500}
-            className="w-full h-full object-cover rounded-md"
-          />
-        </div>
-        <div>
-          <h2 className="text-2xl font-bold mb-4">
-            Unique Features Of Latest & Trending Products
-          </h2>
-          <ul className="list-disc list-inside space-y-2">
-            <li>All frames constructed with hardwood solids and laminates</li>
-            <li>
-              Reinforced with double wood dowels, glue, screw - nails corner
-              blocks and machine nails
-            </li>
-            <li>Arms, backs and seats are structurally reinforced</li>
-          </ul>
-          <button className="mt-6 bg-pink-600 text-white py-2 px-4 rounded-md hover:bg-pink-700">
+    <div className="bg-[#F1F0FF] flex items-center justify-center">
+      <div className="w-[50%]">
+        <Image
+          src="/sofa2.png"
+          alt="Sofa"
+          width={558}
+          height={550}
+          className=" object-cover "
+        />
+      </div>
+      <div className="w-[40%]">
+        <h2 className="text-4xl font-bold mb-4">
+          Unique Features Of Latest & Trending Products
+        </h2>
+        <ul className="list-none ">
+          {[
+            {
+              text: "All frames constructed with hardwood solids and laminates",
+              color: "#F52B70",
+            },
+            {
+              text: "Reinforced with double wood dowels, glue, screw - nails corner blocks and machine nails",
+              color: "#2B2BF5",
+            },
+            {
+              text: "Arms, backs and seats are structurally reinforced",
+              color: "#2BF5CC",
+            },
+          ].map((item, index) => (
+            <div
+              key={index}
+              className="flex text-[#ACABC3] mb-4 items-center gap-3"
+            >
+              <div className="">
+                <div
+                  className="w-3 h-3 rounded-full "
+                  style={{ backgroundColor: item.color }}
+                ></div>
+              </div>
+              <li>{item.text}</li>
+            </div>
+          ))}
+        </ul>
+        <div className="flex gap-5  items-center mt-6">
+          <button className=" bg-[#FB2E86] text-white py-3 px-8 rounded ">
             Add To Cart
           </button>
-          <p className="mt-4 text-lg font-semibold">
-            <strong>6668 Italian Sofa</strong>
+          <p className=" font-semibold">
+            <strong>B&B Italian Sofa </strong>
             <br />
-            $220.00
+            $32.00
           </p>
         </div>
       </div>
