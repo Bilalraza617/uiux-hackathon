@@ -74,7 +74,7 @@ const Trandingproducts = () => (
         ))}
       </div>
       <div className="flex items-center gap-7 justify-center mt-10">
-        <div className="flex  w-[69%] gap-7">
+        <div className="flex   gap-7">
           {executiveSeats.map((seat, index) => (
             <div
               key={index}

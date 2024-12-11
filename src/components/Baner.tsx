@@ -4,7 +4,7 @@ import React from "react";
 const Baner = () => {
   return (
     <div className="bg-[#F1F0FF] flex items-center justify-center">
-      <div className="w-[50%]">
+      <div className="">
         <Image
           src="/sofa2.png"
           alt="Sofa"
