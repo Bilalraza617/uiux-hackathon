@@ -26,7 +26,7 @@ const LatestProducts = () => (
       </div>
     </div>
 
-    <div className="p-4 flex flex-wrap gap-5 justify-center m-auto">
+    <div className="p-4 flex flex-wrap gap-5 justify-center m-auto max-w-[80%]">
       {item.map((data: { image: string }, index) => (
         <div key={index} className="flex flex-col gap-2">
           <div className="h-[306px] w-[380px] flex items-center flex-col bg-[#F7F7F7] ">
