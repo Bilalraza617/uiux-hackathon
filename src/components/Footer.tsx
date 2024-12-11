@@ -4,29 +4,31 @@ import React from "react";
 
 export default function Footer() {
   return (
-    <div className="bg-[#EEEFFB] mt-32">
-      <footer className=" p-2 items-center  m-auto">
+    <div className="bg-[#EEEFFB] mt-32  ">
+      <footer className="flex items-center p-10 h-[400px] ">
         <div className="p-6 w-[90%] m-auto">
           <div className="flex justify-between items-center">
             <div>
-              <h3 className="text-xl font-semibold mb-2">Hekto</h3>
+              <h3 className="text-4xl font-black  mb-2">Hekto</h3>
               <form className="flex">
                 <input
                   type="email"
-                  placeholder="Enter your email"
-                  className=" border border-gray-300 rounded-l-md focus:outline-none"
+                  placeholder="Enter Email Address"
+                  className="p-2 px-4 rounded-l outline-none"
                 />
                 <button
                   type="submit"
-                  className="bg-[#FB2E86] text-white py-1 px-2 rounded-r "
+                  className="bg-[#FB2E86] text-white py-1 px-8 rounded-r "
                 >
                   Sign Up
                 </button>
               </form>
-              <p>Conatact INfo</p>
-              <p className="mt-2 text-gray-500">
-                17 Princess Road, London, Greater London NW1 8JR, UK
-              </p>
+              <div className="font-normal text-[#8A8FB9]">
+                <p className="mt-5">Conatact INfo</p>
+                <p className=" text-sm mt-1">
+                  17 Princess Road, London, Greater London NW1 8JR, UK
+                </p>
+              </div>
             </div>
             <div className="flex items-center justify-between w-[60%]">
               <div>
@@ -63,21 +65,21 @@ export default function Footer() {
             </div>
           </div>
         </div>
-        <div className="mt-8 flex justify-between items-center w-[80%] m-auto bg-[#E7E4F8]">
-          <p className="text-gray-500">&copy;Webecy - All Rights Reserved.</p>
-          <div className="flex space-x-4">
-            <Link href="#" className="">
-              <Image src="/F1.png" height={20} width={20} alt="img" />
-            </Link>
-            <Link href="#" className="">
-              <Image src="/F2.png" height={20} width={20} alt="img" />
-            </Link>
-            <Link href="#" className="">
-              <Image src="/F3.png" height={20} width={20} alt="img" />
-            </Link>
-          </div>
-        </div>
       </footer>
+      <div className="mt-8 flex justify-between items-center w-[80%] m-auto bg-[#E7E4F8]">
+        <p className="text-gray-500">&copy;Webecy - All Rights Reserved.</p>
+        <div className="flex space-x-4">
+          <Link href="#" className="">
+            <Image src="/F1.png" height={20} width={20} alt="img" />
+          </Link>
+          <Link href="#" className="">
+            <Image src="/F2.png" height={20} width={20} alt="img" />
+          </Link>
+          <Link href="#" className="">
+            <Image src="/F3.png" height={20} width={20} alt="img" />
+          </Link>
+        </div>
+      </div>
     </div>
   );
 }
