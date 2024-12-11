@@ -5,7 +5,7 @@ import { MdOutlineKeyboardArrowDown } from "react-icons/md";
 
 const Header = () => {
   return (
-    <div className="flex w-[1177px] items-center justify-between my-4  m-auto">
+    <div className="flex max-w-[1177px] items-center justify-between my-4  m-auto">
       <div className="flex items-center gap-28">
         <h1 className="font-extrabold text-3xl">Hekto</h1>
         <ul className="flex items-center gap-9">
