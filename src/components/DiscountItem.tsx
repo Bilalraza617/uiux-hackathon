@@ -15,7 +15,7 @@ const DiscountItem = () => (
         <button className="px-4  ">Sofa Colletion</button>
       </div>
     </div>
-    <div className=" flex items-center">
+    <div className=" flex items-center justify-center">
       <div className="flex flex-col  gap-4 items-start">
         <h2 className="text-3xl font-extrabold">
           20% Discount Of All Products
@@ -47,7 +47,7 @@ const DiscountItem = () => (
             </div>
           ))}
         </ul>
-        <button className="bg-[#FB2E86] text-white py-2 px-4 rounded ">
+        <button className="bg-[#FB2E86] text-white py-2 px-6 rounded ">
           Shop Now
         </button>
       </div>
