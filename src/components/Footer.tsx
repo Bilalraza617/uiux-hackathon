@@ -23,7 +23,7 @@ export default function Footer() {
                   Sign Up
                 </button>
               </form>
-              <div className="font-normal text-[#8A8FB9]">
+              <div className="font-normal ">
                 <p className="mt-5">Conatact INfo</p>
                 <p className=" text-sm mt-1">
                   17 Princess Road, London, Greater London NW1 8JR, UK
@@ -33,7 +33,7 @@ export default function Footer() {
             <div className="flex items-center justify-between w-[60%]">
               <div>
                 <h3 className="text-xl font-semibold mb-2">Categories</h3>
-                <ul className="font-thin">
+                <ul className="font-thin text-[#8A8FB9]">
                   <li>Laptops & Computers</li>
                   <li>Cameras & Photography</li>
                   <li>Smart Phones & Tablets</li>
@@ -43,7 +43,7 @@ export default function Footer() {
               </div>
               <div>
                 <h3 className="text-xl font-semibold mb-2">Customer Care</h3>
-                <ul className="font-thin">
+                <ul className="font-thin text-[#8A8FB9]">
                   <li>My Account</li>
                   <li>Discount</li>
                   <li>Returns</li>
@@ -53,7 +53,7 @@ export default function Footer() {
               </div>
               <div>
                 <h3 className="text-xl font-semibold mb-2">Pages</h3>
-                <ul className="font-thin">
+                <ul className="font-thin text-[#8A8FB9]">
                   <li>Blog</li>
                   <li>Browse the Shop</li>
                   <li>Category</li>
@@ -66,18 +66,20 @@ export default function Footer() {
           </div>
         </div>
       </footer>
-      <div className="mt-8 flex justify-between items-center w-[80%] m-auto bg-[#E7E4F8]">
-        <p className="text-gray-500">&copy;Webecy - All Rights Reserved.</p>
-        <div className="flex space-x-4">
-          <Link href="#" className="">
-            <Image src="/F1.png" height={20} width={20} alt="img" />
-          </Link>
-          <Link href="#" className="">
-            <Image src="/F2.png" height={20} width={20} alt="img" />
-          </Link>
-          <Link href="#" className="">
-            <Image src="/F3.png" height={20} width={20} alt="img" />
-          </Link>
+      <div className="bg-[#E7E4F8] p-4">
+        <div className=" flex justify-between items-center w-[80%] m-auto ]">
+          <p className="text-gray-500">&copy;Webecy - All Rights Reserved.</p>
+          <div className="flex space-x-4">
+            <Link href="#" className="">
+              <Image src="/F1.png" height={20} width={20} alt="img" />
+            </Link>
+            <Link href="#" className="">
+              <Image src="/F2.png" height={20} width={20} alt="img" />
+            </Link>
+            <Link href="#" className="">
+              <Image src="/F3.png" height={20} width={20} alt="img" />
+            </Link>
+          </div>
         </div>
       </div>
     </div>
