@@ -5,7 +5,7 @@ import React from "react";
 export default function Footer() {
   return (
     <div className="bg-[#EEEFFB] mt-32  ">
-      <footer className="flex items-center p-10 h-[400px] ">
+      <footer className="flex items-center  h-[400px] ">
         <div className="p-6 w-[90%] m-auto">
           <div className="flex justify-between items-center">
             <div>
@@ -23,7 +23,7 @@ export default function Footer() {
                   Sign Up
                 </button>
               </form>
-              <div className="font-normal ">
+              <div className="font-normal text-[#8A8FB9]">
                 <p className="mt-5">Conatact INfo</p>
                 <p className=" text-sm mt-1">
                   17 Princess Road, London, Greater London NW1 8JR, UK
@@ -52,7 +52,7 @@ export default function Footer() {
                 </ul>
               </div>
               <div>
-                <h3 className="text-xl font-semibold mb-2">Pages</h3>
+                <h3 className="text-xl mt-6 font-semibold mb-2">Pages</h3>
                 <ul className="font-thin text-[#8A8FB9]">
                   <li>Blog</li>
                   <li>Browse the Shop</li>
