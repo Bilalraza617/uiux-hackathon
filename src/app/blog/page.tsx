@@ -161,7 +161,7 @@ const Blog = () => {
                   <li key={index} className={index == 0 ? "text-white" : ""}>
                     <Link
                       href="#"
-                      className="py-2 pl-2 pr-8"
+                      className="py-2 pl-2 pr-8 rounded"
                       style={{ backgroundColor: item.color }}
                     >
                       {item.text}
