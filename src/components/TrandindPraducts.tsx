@@ -52,7 +52,7 @@ const Trandingproducts = () => (
             key={index}
             className="flex flex-col gap-2 w-[270px] h-[350px] shadow-lg rounded-lg p-2   items-center"
           >
-            <div className=" flex items-center w-full h-[244px] flex-col bg-[#F7F7F7] rounded">
+            <div className=" flex items-center  h-[244px] flex-col bg-[#F7F7F7] rounded">
               <Image
                 src={`/${data.image}.png`}
                 alt="img"
@@ -78,7 +78,7 @@ const Trandingproducts = () => (
           {executiveSeats.map((seat, index) => (
             <div
               key={index}
-              className="p-5  rounded w-[420px] shadow-lg"
+              className="p-5  rounded max-w-[420px] shadow-lg"
               style={{ backgroundColor: seat.bg }}
             >
               <h3 className="text-lg font-medium">23% off in all products</h3>
@@ -98,7 +98,7 @@ const Trandingproducts = () => (
         <div className="">
           {nastedMap.map((text, index) => (
             <div key={index} className="h-[115px] gap-3  flex items-center">
-              <div className="bg-[#F5F6F8] w-[100px] h-[100px] flex items-center justify-center ">
+              <div className="bg-[#F5F6F8] max-w-[100px] h-[100px] flex items-center justify-center ">
                 <Image
                   src={`/${text.image}.png`}
                   alt="img"

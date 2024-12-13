@@ -11,9 +11,9 @@ import Image from "next/image";
 
 export default function Home() {
   return (
-    <div>
-      <div className="max-w-[1920px]">
-        <div className="bg-[#F2F0FF] flex relative h-[764px]">
+    <div className="w-full ">
+      <div className="">
+        <div className="bg-[#F2F0FF]  flex relative h-[764px]">
           <div className="flex items-center">
             <div className=" w-[40%] h-full flex justify-end items-start ">
               <Image

@@ -22,10 +22,10 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={`${josefin.className} antialiased`}>
+      <body className={`${josefin.className}  antialiased`}>
         <TopHeader />
         <Header />
-        <main>{children}</main>
+        <main className="w-full h-full">{children}</main>
         <Footer />
       </body>
     </html>
