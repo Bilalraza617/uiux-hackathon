@@ -15,7 +15,7 @@ const DiscountItem = () => (
         <button className="px-4  ">Sofa Colletion</button>
       </div>
     </div>
-    <div className=" flex items-center justify-center">
+    <div className=" flex  sm:w-[95%] m-auto items-center justify-center">
       <div className="flex flex-col  gap-4 items-start">
         <h2 className="text-3xl font-extrabold">
           20% Discount Of All Products
@@ -56,7 +56,7 @@ const DiscountItem = () => (
           src="/chair1.png"
           alt="Eams Sofa Compact"
           className=" object-cover"
-          width={699}
+          width={600}
           height={597}
         />
       </div>
