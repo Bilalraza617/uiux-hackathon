@@ -14,11 +14,11 @@ const LatestBlog = () => (
       <h2 className="text-3xl font-extrabold text-center ">Leatest Blog</h2>
     </div>
 
-    <div className="flex flex-wrap  gap-10  justify-center items-center">
+    <div className="flex flex-wrap  gap-10 md:gap-2 xl:gap-12 justify-center items-center">
       {blogPosts.map((data: { image: string; author: string }, index) => (
         <div
           key={index}
-          className="w-[370px] h-[493px] shadow-lg rounded-lg overflow-hidden"
+          className="max-w-[370px] md:w-[300px] lg:h-[430px] md:h-[410px] shadow-lg rounded-lg overflow-hidden"
         >
           <div>
             <Image

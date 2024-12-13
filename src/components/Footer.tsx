@@ -8,9 +8,9 @@ export default function Footer() {
       <footer className="flex items-center  h-[400px] ">
         <div className="p-6 w-[90%] m-auto">
           <div className="flex justify-between items-center">
-            <div>
+            <div className="sm:max-lg:w-[28%]">
               <h3 className="text-4xl font-black  mb-2">Hekto</h3>
-              <form className="flex">
+              <form className="flex  ">
                 <input
                   type="email"
                   placeholder="Enter Email Address"
@@ -18,7 +18,7 @@ export default function Footer() {
                 />
                 <button
                   type="submit"
-                  className="bg-[#FB2E86] text-white py-1 px-8 rounded-r "
+                  className="bg-[#FB2E86] text-white py-1 sm:whitespace-nowrap px-8 sm:max-lg:px-2 rounded-r "
                 >
                   Sign Up
                 </button>
