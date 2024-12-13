@@ -111,7 +111,7 @@ const ShopList = () => {
 
         <div className=" mt-40">
           {productList.map((item, index) => (
-            <div key={index} className="hover:bg-[#F6F6FD80]">
+            <div key={index} className="">
               <Link
                 href={item.link}
                 passHref
@@ -122,7 +122,7 @@ const ShopList = () => {
                   alt={"Product"}
                   width={313.63}
                   height={217.56}
-                  className=" object-cover  "
+                  className=" object-cover bg-[#F6F6FD80] "
                 />
                 <div className="flex flex-col  gap-2 text-custumBlue">
                   <div className="flex justify-between items-center max-w-xs">

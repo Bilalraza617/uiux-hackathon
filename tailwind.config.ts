@@ -15,6 +15,11 @@ export default {
         pinkDefault: "#FB2E86",
         customBlue: "#111C85",
         custumPInk: "#FF2AAA",
+        custumPink: "#F939BF",
+      },
+      width: {
+        maximun: "1171px",
+        mnimun: "95%",
       },
     },
   },

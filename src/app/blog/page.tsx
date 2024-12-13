@@ -2,37 +2,12 @@ import React from "react";
 import Image from "next/image";
 import Link from "next/link";
 import ShopHero from "@/components/ShopHero";
-import { FaPenNib } from "react-icons/fa";
+import { FaFacebook, FaPenNib } from "react-icons/fa";
 import { MdOutlineCalendarMonth } from "react-icons/md";
 import { CiSearch } from "react-icons/ci";
 import Brands from "@/components/Brands";
+import { RiInstagramFill } from "react-icons/ri";
 
-// const categories = [
-//   { name: "Hobbies", count: 14 },
-//   { name: "Women", count: 21 },
-// ];
-// const recentPosts = [
-//   {
-//     title: "It is a long established fact",
-//     date: "Aug 09 2020",
-//     image: "/images/post1.jpg",
-//   },
-//   {
-//     title: "It is a long established fact",
-//     date: "Aug 09 2020",
-//     image: "/images/post2.jpg",
-//   },
-//   {
-//     title: "It is a long established fact",
-//     date: "Aug 09 2020",
-//     image: "/images/post3.jpg",
-//   },
-//   {
-//     title: "It is a long established fact",
-//     date: "Aug 09 2020",
-//     image: "/images/post4.jpg",
-//   },
-// ];
 const blog = [
   {
     image: "b1",
@@ -48,7 +23,7 @@ const blog = [
   },
 ];
 const catego = [
-  { text: "Hobbies (14)" },
+  { text: "Hobbies (14)", color: "#F939BF" },
   { text: "Women (21)" },
   { text: "Women (21)" },
   { text: "Women (21)" },
@@ -113,10 +88,10 @@ const tags = [
 
 const Blog = () => {
   return (
-    <div className="text-[#151875] p-4">
+    <div>
       <ShopHero title="Blog Page" />
 
-      <div className="container mx-auto px-4 py-6 flex justify-between">
+      <div className="py-6 flex w-mnimun text-[#151875] max-w-[1171px] m-auto justify-between">
         <div className="w-3/4">
           {blog.map((item: { image: string; title: string }, index) => (
             <div key={index} className="post mb-8">
@@ -127,54 +102,67 @@ const Blog = () => {
                 width={870}
                 height={453}
               />
-              <div className="flex gap-3">
-                <div className=" flex items-center gap-2 ">
-                  <FaPenNib className="text-pink-500" />
-                  <h4 className="text-black bg-[#FFE7F9]">Surf Auxion</h4>
+              <div className="flex flex-col gap-5 mt-8">
+                <div className="flex gap-3">
+                  <div className=" flex items-center gap-2 ">
+                    <FaPenNib className="text-pink-500" />
+                    <h4 className="text-black bg-[#FFE7F9]">Surf Auxion</h4>
+                  </div>
+                  <div className=" flex items-center gap-2">
+                    <MdOutlineCalendarMonth className="text-[#FFA454]" />
+                    <h4 className="bg-[#FFECE2]">Aug 09 2020</h4>
+                  </div>
                 </div>
-                <div className=" flex items-center gap-2">
-                  <MdOutlineCalendarMonth className="text-[#FFA454]" />
-                  <h4 className="bg-[#FFECE2]">Aug 09 2020</h4>
+                <div className="flex flex-col gap-5">
+                  <h2 className="text-2xl font-[1000] mb-2 text-[#151875]">
+                    {item.title}
+                  </h2>
+                  <p className="text-[#8A8FB9] text-sm  font-bold">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                    Velit facilisis quis auctor pretium ipsum, eu rutrum.
+                    Condimentum <br /> eu malesuada vitae ultrices in in neque,
+                    porta dignissim. Adipiscing purus, cursus vulputate id id
+                    dictum at.
+                  </p>
+                  <Link
+                    href="#"
+                    className="text-[#151875] text-lg tracking-tighter gap-1 flex items-center font-black"
+                  >
+                    Read More
+                    <div
+                      className="h-2 w-2 rounded-full"
+                      style={{ backgroundColor: "#FB2E86" }}
+                    ></div>
+                  </Link>
                 </div>
-              </div>
-              <div className="post-info  bg-white shadow rounded">
-                <h2 className="text-2xl font-bold mb-2">{item.title}</h2>
-                <p className="text-gray-700">
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Velit
-                  facilisis quis auctor pretium ipsum, eu rutrum. Condimentum eu
-                  malesuada vitae ultrices in in neque, porta dignissim.
-                  Adipiscing purus, cursus vulputate id id dictum at.
-                </p>
-                <Link
-                  href="#"
-                  className="text-blue-500 hover:underline mt-2 inline-block"
-                >
-                  Read More
-                </Link>
               </div>
             </div>
           ))}
         </div>
 
-        <div className="w-1/4 ml-4">
-          <h1>Search</h1>
-          <div className="mb-8">
+        <div className="w-1/4 ml-5">
+          <h1 className="text-2xl font-black">Search</h1>
+          <div className="mb-8 mt-3">
             <div className="flex relative">
               <input
                 type="text"
-                placeholder="Search"
-                className="w-full p-2 border border-gray-300 rounded mb-4"
+                placeholder="Search For Posts"
+                className="w-full p-2 border border-[#BDBDD8] rounded-sm mb-4"
               />
-              <CiSearch className="" />
+              <CiSearch className="absolute right-[5%] bottom-[50%] text-[#CBCBE0]" />
             </div>
           </div>
           <div className="mb-8">
             <div>
               <h3 className="text-xl font-bold mb-4">Categories</h3>
-              <ul className=" flex list-none flex-wrap gap-3 pl-5">
-                {catego.map((item: { text: string }, index) => (
-                  <li key={index} className="">
-                    <Link href="#" className={index === 0 ? "bg-pink-600" : ""}>
+              <ul className=" flex list-none flex-wrap gap-3">
+                {catego.map((item: { text: string; color?: string }, index) => (
+                  <li key={index} className={index == 0 ? "text-white" : ""}>
+                    <Link
+                      href="#"
+                      className="py-2 pl-2 pr-8"
+                      style={{ backgroundColor: item.color }}
+                    >
                       {item.text}
                     </Link>
                   </li>
@@ -182,24 +170,24 @@ const Blog = () => {
               </ul>
             </div>
           </div>
-          <div className="mb-8">
-            <h3 className="text-xl font-bold mb-4">Recent Post</h3>
-            <ul className="list-none pl-5">
+          <div className="my-10">
+            <h3 className="text-xl font-bold mb-10">Recent Post</h3>
+            <ul className="list-none">
               {recent.map((image: { image: string }, index) => (
-                <li key={index}>
-                  <Link href="#" className="text-blue-500">
-                    <div className="flex">
-                      <Image
-                        src={`/${image.image}.png`}
-                        alt="img"
-                        width={100}
-                        height={100}
-                        className="object-cover w-[30%] rounded-md"
-                      />
-                      <div>
-                        <h2>It is a long established fact</h2>
-                        <h4>Aug 09 2020</h4>
-                      </div>
+                <li key={index} className="my-6">
+                  <Link href="#" className="flex items-center gap-2">
+                    <Image
+                      src={`/${image.image}.png`}
+                      alt="img"
+                      width={100}
+                      height={100}
+                      className="object-cover  rounded-sm"
+                    />
+                    <div className="">
+                      <h2 className="text-lg whitespace-nowrap font-semibold">
+                        It is a long established fact
+                      </h2>
+                      <h4 className="text-gray-500"> Aug 09 2020</h4>
                     </div>
                   </Link>
                 </li>
@@ -208,19 +196,21 @@ const Blog = () => {
           </div>
           <div className="mb-8">
             <h3 className="text-xl font-bold mb-4">Sale Product</h3>
-            <ul className="list-disc pl-5">
+            <ul className="">
               {sale.map((item: { image: string; title: string }, index) => (
-                <li key={index} className="flex">
-                  <Link href="#" className="text-blue-500 flex hover:underline">
+                <li key={index} className=" my-4">
+                  <Link href="#" className="flex gap-2">
                     <Image
                       src={`/${item.image}.png`}
                       alt="img"
-                      width={100}
-                      height={100}
+                      width={70}
+                      height={57}
                     />
                     <div>
-                      <h2>{item.title}</h2>
-                      <h4>Aug 09 2020</h4>
+                      <h2 className="text-lg font-black whitespace-nowrap">
+                        {item.title}
+                      </h2>
+                      <h4 className="text-[#8A8FB9] text-sm">Aug 09 2020</h4>
                     </div>
                   </Link>
                 </li>
@@ -229,19 +219,27 @@ const Blog = () => {
           </div>
           <div className="mb-8">
             <h3 className="text-xl font-bold mb-4">Offer product</h3>
-            <ul className="list-disc flex pl-5">
+            <ul className="flex flex-wrap items-center gap-4  list-none">
               {offer.map((item: { image: string; title: string }, index) => (
-                <li key={index}>
-                  <Link href="#" className="text-blue-500 flex hover:underline">
+                <li key={index} className=" ">
+                  <Link
+                    href="#"
+                    className="flex flex-col justify-center items-center gap-3"
+                  >
                     <Image
                       src={`/${item.image}.png`}
                       alt="img"
-                      width={100}
+                      width={135}
                       height={100}
+                      className="object-cover"
                     />
-                    <div>
-                      <h2>{item.title}</h2>
-                      <h4>$12.00 - $15.00</h4>
+                    <div className="w-[80%] text-center">
+                      <h2 className="text-lg font-black  tracking-tighter ">
+                        {item.title}
+                      </h2>
+                      <h4 className="text-sm font-bold text-[#8A8FB9]">
+                        $12.00 - $15.00
+                      </h4>
                     </div>
                   </Link>
                 </li>
@@ -249,25 +247,32 @@ const Blog = () => {
             </ul>
           </div>
           <div>
-            <h1>Follow</h1>
-            <div className="flex space-x-4">
+            <h1 className="font-semibold text-lg">Follow</h1>
+            <div className="flex gap-3 my-3">
               <Link href="#" className="">
-                <Image src="/F1.png" height={20} width={20} alt="img" />
+                {/* <Image src="/F1.png" height={20} width={20} alt="img" /> */}
+                <FaFacebook />
               </Link>
               <Link href="#" className="">
-                <Image src="/F2.png" height={20} width={20} alt="img" />
+                {/* <Image src="/F2.png" height={20} width={20} alt="img" /> */}
+                <RiInstagramFill className="bg-purple-400 text-white" />
               </Link>
               <Link href="#" className="">
                 <Image src="/F3.png" height={20} width={20} alt="img" />
               </Link>
             </div>
           </div>
-          <div>
+          <div className="mt-10">
             <h3 className="text-xl font-bold mb-4">Tags</h3>
-            <ul className="list-disc pl-5">
+            <ul className=" gap-y-3 gap-x-10 flex flex-wrap list-none ">
               {tags.map((item, index) => (
-                <li key={index}>
-                  <Link href="#" className="text-blue-500 hover:underline">
+                <li
+                  key={index}
+                  className={
+                    index === 1 ? "text-[#FB2E86] decoration-[#FB2E86]" : ""
+                  }
+                >
+                  <Link href="#" className="font-semibold underline">
                     {item.text}
                   </Link>
                 </li>
@@ -277,11 +282,19 @@ const Blog = () => {
         </div>
       </div>
       <div className="flex justify-center mt-4">
-        <div className="flex space-x-2">
-          <div className="w-3 h-3 bg-pink-500 rounded-full"></div>{" "}
-          <div className="w-3 h-3 bg-gray-300 rounded-full"></div>{" "}
-          <div className="w-3 h-3 bg-gray-300 rounded-full"></div>{" "}
-          <div className="w-3 h-3 bg-gray-300 rounded-full"></div>{" "}
+        <div className="flex gap-8">
+          <div className="w-[25px] h-[22px] text-center text-white bg-[#FB2CA8] rounded-sm">
+            1
+          </div>
+          <div className="w-[25px] h-[22px] text-center border border-[#E0D3F5] text-[#E0D3F5] rounded-sm">
+            2
+          </div>
+          <div className="w-[25px] h-[22px] text-center border border-[#E0D3F5] text-[#E0D3F5] rounded-sm">
+            3
+          </div>
+          <div className="w-[25px] h-[22px] text-center border border-[#E0D3F5] text-[#E0D3F5] rounded-sm">
+            4
+          </div>
         </div>
       </div>
       <Brands />
