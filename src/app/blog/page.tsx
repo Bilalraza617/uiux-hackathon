@@ -2,11 +2,12 @@ import React from "react";
 import Image from "next/image";
 import Link from "next/link";
 import ShopHero from "@/components/ShopHero";
-import { FaFacebook, FaPenNib } from "react-icons/fa";
+// import { FaFacebook, FaPenNib, FaTwitter } from "react-icons/fa";
 import { MdOutlineCalendarMonth } from "react-icons/md";
 import { CiSearch } from "react-icons/ci";
 import Brands from "@/components/Brands";
-import { RiInstagramFill } from "react-icons/ri";
+import { FaPenNib } from "react-icons/fa";
+// import { RiInstagramFill } from "react-icons/ri";
 
 const blog = [
   {
@@ -250,15 +251,16 @@ const Blog = () => {
             <h1 className="font-semibold text-lg">Follow</h1>
             <div className="flex gap-3 my-3">
               <Link href="#" className="">
-                {/* <Image src="/F1.png" height={20} width={20} alt="img" /> */}
-                <FaFacebook />
+                <Image src="/F1.png" height={20} width={20} alt="img" />
+                {/* <FaFacebook className="bg-purple-400 text-white" /> */}
               </Link>
               <Link href="#" className="">
-                {/* <Image src="/F2.png" height={20} width={20} alt="img" /> */}
-                <RiInstagramFill className="bg-purple-400 text-white" />
+                <Image src="/F2.png" height={20} width={20} alt="img" />
+                {/* <RiInstagramFill className="bg-purple-400 text-white" /> */}
               </Link>
               <Link href="#" className="">
                 <Image src="/F3.png" height={20} width={20} alt="img" />
+                {/* <FaTwitter className="bg-purple-400 text-white" /> */}
               </Link>
             </div>
           </div>
