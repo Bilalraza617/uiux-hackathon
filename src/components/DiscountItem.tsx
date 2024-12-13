@@ -51,7 +51,7 @@ const DiscountItem = () => (
           Shop Now
         </button>
       </div>
-      <div>
+      <div className="w-[40%]">
         <Image
           src="/chair1.png"
           alt="Eams Sofa Compact"
