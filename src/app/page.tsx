@@ -13,7 +13,7 @@ export default function Home() {
   return (
     <div className="w-full ">
       <div className="">
-        <div className="bg-[#F2F0FF]  flex relative h-[764px]">
+        <div className="bg-[#F2F0FF]  flex relative h-[500px] xl:h-[764px]">
           <div className="flex items-center">
             <div className=" w-[40%] h-full flex justify-end items-start ">
               <Image
@@ -30,7 +30,7 @@ export default function Home() {
                 <p className="text-sm text-pink-600">
                   Best Furniture For Your Castle...
                 </p>
-                <h1 className="text-4xl font-bold leading-tight my-4">
+                <h1 className="text-2xl lg:text-4xl  font-bold leading-tight my-4">
                   New Furniture Collection Trends in 2020
                 </h1>
                 <p className="text-gray-600 mb-6">
