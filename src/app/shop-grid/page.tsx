@@ -7,9 +7,9 @@ const ShopGrid = () => {
     <>
       <ShopHero title="Shop Grid Default" />
 
-      <div className="bg-white flex-wrap flex items-center justify-between max-w-[1121px] m-auto mt-40">
+      <div className="bg-white flex-wrap flex items-center justify-between w-[90%] max-w-[1121px] m-auto mt-40">
         <div>
-          <h2 className="text-xl text-navyBlue font-bold">
+          <h2 className="text-xl text-custumBlue font-bold">
             Ecommerce Acceories & Fashion Items
           </h2>
           <p className="text-sm text-gray-400">
@@ -19,7 +19,9 @@ const ShopGrid = () => {
         <div className="flex justify-between items-center gap-5">
           <div>
             <span>Per Page:</span>
-            <input type="text" />
+            <select name="sort" id="sort" className="text-gray-400">
+              <option value="BestMatch">1</option>
+            </select>
           </div>
           <div>
             <span>Sort By:</span>

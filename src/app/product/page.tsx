@@ -46,22 +46,22 @@ const ProductDetail = () => {
         </div>
         <div className="max-w-[50%] flex flex-col gap-5">
           <div className="flex flex-c ol gap-2">
-            <h1 className="text-4xl text-navyBlue font-bold">
+            <h1 className="text-4xl text-custumBlue font-bold">
               Playwoord arm chair
             </h1>
             {[{ stars: 5, count: 614 }].map((rating, index) => (
               <label key={index} className="flex items-center text-yellow-400">
                 {"★".repeat(rating.stars)}
                 {"☆".repeat(5 - rating.stars)}
-                <span className="ml-2 text-navyBlue">({rating.count})</span>
+                <span className="ml-2 text-custumBlue">({rating.count})</span>
               </label>
             ))}
-            <p className="text-navyBlue">
+            <p className="text-custumBlue">
               $33
               <span className="line-through text-[#FB2E86] pl-5">$22</span>
             </p>
             <div className="flex items-center gap-5">
-              <h2 className="text-navyBlue font-semibold">Color:</h2>
+              <h2 className="text-custumBlue font-semibold">Color:</h2>
               <div className="flex gap-2">
                 {/* {item.variant.map((color, colorIndex) => ( */}
                 <div
@@ -79,29 +79,29 @@ const ProductDetail = () => {
             assumenda dolorem illo est ullam aut quam fugit! Ipsa quo vel
             voluptatum?
           </p>
-          <button className="text-navyBlue w-52">
+          <button className="text-custumBlue w-52">
             Add to Cart <span className="ml-5">♥</span>
           </button>
-          <h2 className="text-navyBlue font-semibold">Categories:</h2>
-          <h2 className="text-navyBlue font-semibold">Tags:</h2>
-          <h2 className="text-navyBlue font-semibold">Share:</h2>
+          <h2 className="text-custumBlue font-semibold">Categories:</h2>
+          <h2 className="text-custumBlue font-semibold">Tags:</h2>
+          <h2 className="text-custumBlue font-semibold">Share:</h2>
         </div>
       </div>
       <div className="bg-gray-100 flex flex-col items-center justify-center">
         <div className="flex items-start justify-start w-[60%] m-auto mt-40">
           <div className="w-[60%] flex gap-20">
-            <h2 className="text-navyBlue text-2xl font-bold underline">
+            <h2 className="text-custumBlue text-2xl font-bold underline">
               Description
             </h2>
-            <h2 className="text-navyBlue text-2xl font-bold">
+            <h2 className="text-custumBlue text-2xl font-bold">
               Additional Info
             </h2>
-            <h2 className="text-navyBlue text-2xl font-bold">Reviews</h2>
-            <h2 className="text-navyBlue text-2xl font-bold">Video</h2>
+            <h2 className="text-custumBlue text-2xl font-bold">Reviews</h2>
+            <h2 className="text-custumBlue text-2xl font-bold">Video</h2>
           </div>
         </div>
         <div className="w-[60%] mt-20">
-          <h2 className="text-navyBlue text-2xl font-semibold">
+          <h2 className="text-custumBlue text-2xl font-semibold">
             Additional Info
           </h2>
           <p className="text-gray-400">
@@ -116,7 +116,7 @@ const ProductDetail = () => {
             Dolorem enim sint unde aliquam eius officiis animi consectetur,
             distinctio deserunt pariatur omnis dolore ea perferendis?
           </p>
-          <h2 className="text-navyBlue text-2xl font-semibold mt-10">
+          <h2 className="text-custumBlue text-2xl font-semibold mt-10">
             More details
           </h2>
           <p className="text-gray-400">
@@ -135,7 +135,7 @@ const ProductDetail = () => {
       </div>
       <div className="bg-white flex flex-col items-center justify-center my-40">
         <div className="w-[60%] my-40">
-          <h2 className="text-4xl text-navyBlue font-bold mb-20">
+          <h2 className="text-4xl text-custumBlue font-bold mb-20">
             Related Products
           </h2>
           <Link
@@ -151,7 +151,7 @@ const ProductDetail = () => {
               className="w-30 h-30 object-cover bg-gray-100 p-8"
             />
             <div className="text-center flex flex-col gap-2 pt-3">
-              <h2 className=" text-xl text-navyBlue font-extrabold">Name</h2>
+              <h2 className=" text-xl text-custumBlue font-extrabold">Name</h2>
               <div className="flex gap-2">
                 {/* {variant.map((color, colorIndex) => ( */}
                 <div
@@ -161,7 +161,7 @@ const ProductDetail = () => {
                 ></div>
                 {/* ))} */}
               </div>
-              <p className="text-navyBlue">
+              <p className="text-custumBlue">
                 $0
                 <span className="line-through text-[#FB2E86]">$</span>
               </p>

@@ -121,7 +121,7 @@ const ProductGrid = () => {
             className="w-30 h-30 object-cover bg-gray-100 p-8"
           />
           <div className="text-center flex flex-col gap-2 pt-3">
-            <h2 className=" text-xl text-navyBlue font-extrabold">
+            <h2 className=" text-xl text-custumBlue font-extrabold">
               {item.name}
             </h2>
             <div className="flex justify-center gap-2">
@@ -133,7 +133,7 @@ const ProductGrid = () => {
                 ></div>
               ))}
             </div>
-            <p className="text-navyBlue">
+            <p className="text-custumBlue">
               ${item.price.toFixed(2)}
               <span className="line-through text-[#FB2E86]">
                 ${item.cutPrice.toFixed(2)}
