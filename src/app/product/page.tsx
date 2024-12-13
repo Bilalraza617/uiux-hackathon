@@ -11,7 +11,7 @@ const ProductDetail = () => {
     <div>
       <ShopHero title="Product Details" />
 
-      <div className="bg-white flex items-center justify-start w-[60%] m-auto mt-40">
+      <div className="bg-white flex items-center  justify-start w-[60%] m-auto mt-40">
         <div className="flex">
           <div>
             <Image
