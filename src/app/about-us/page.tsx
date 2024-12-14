@@ -1,30 +1,44 @@
-import Banner3 from "@/components/Banner3";
+import Shopex from "@/components/Shopex";
+import ShopHero from "@/components/ShopHero";
+import Image from "next/image";
 
 const page = () => {
-  <div className="flex justify-center items-center min-h-screen bg-gray-100">
-    <Banner3 name="About Us" />
-    <div className="bg-white p-6 rounded-lg shadow-lg flex flex-col md:flex-row max-w-4xl">
-      <div className="md:w-1/2">
-        {/* <Image
-          src="/images/business-meeting.jpg"
-          alt="Business Meeting"
-          className="w-full h-full object-cover rounded-md"
-        /> */}
+  return (
+    <>
+      <ShopHero title="About Us" />
+      <div className="flex m-auto items-center max-w-[1171px] mt-20  w-[95%]">
+        <div className=" p-4 flex flex-col md:flex-row gap-5">
+          <div
+            className=" rounded max-w-[50vh]"
+            style={{ boxShadow: "-20px 12px  0px 5px #2B3CAB" }}
+          >
+            <Image
+              src="/A_U.png"
+              alt="Business Meeting"
+              className=" object-cover rounded-md"
+              width={555}
+              height={390}
+            />
+          </div>
+          <div className="flex flex-col items-start justify-center ">
+            <h1 className="text-3xl text-[#151875] font-bold mb-4">
+              Know About Our Ecommerce <br /> Business, History
+            </h1>
+            <p className="text-[#8A8FB9] mb-4">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mattis
+              neque ultrices <br /> mattis aliquam, malesuada diam est.
+              Malesuada sem tristique amet erat vitae <br /> eget dolor
+              lobortis. Accumsan faucibus vitae lobortis quis bibendum quam.
+            </p>
+            <button className="bg-[#FB2E86] text-white py-2 px-4 rounded">
+              Contact Us
+            </button>
+          </div>
+        </div>
       </div>
-      <div className="md:w-1/2 mt-4 md:mt-0 md:ml-6">
-        <h1 className="text-3xl font-bold mb-4">
-          Know About Our Ecommerce Business, History
-        </h1>
-        <p className="text-gray-700 mb-4">
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Massa purus
-          gravida.
-        </p>
-        <button className="bg-pink-600 text-white py-2 px-4 rounded-md hover:bg-pink-700">
-          Contact Us
-        </button>
-      </div>
-    </div>
-  </div>;
+      <Shopex />
+    </>
+  );
 };
 
 export default page;
