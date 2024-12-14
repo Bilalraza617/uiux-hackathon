@@ -6,7 +6,7 @@ interface Shop {
 }
 const ShopHero = ({ title }: Shop) => {
   return (
-    <div className="bg-[#F6F5FF] h-[286px] sm:max-lg:h-[150px] flex items-center justify-center">
+    <div className="bg-[#F6F5FF] h-[286px] sm:max-2xl:h-[150px] flex items-center justify-center">
       <div className=" max-w-[1141px]  w-[90%] m-auto ">
         <h1 className="text-4xl font-extrabold text-[#101750]">{title}</h1>
         <Breadcrumbs />
