@@ -3,7 +3,7 @@ import Image from "next/image";
 import Banner3 from "@/components/Banner3";
 
 const Custom404 = () => (
-  <div className="flex justify-center items-center min-h-screen bg-gray-100">
+  <div className=" items-center  bg-gray-100">
     <Banner3 name="404 Not Found" />
     <div className="bg-white p-6 rounded-lg shadow-lg text-center">
       <div className="flex flex-col items-center mb-4">

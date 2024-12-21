@@ -117,34 +117,37 @@ const Blog = () => {
                 <h2 className="text-2xl font-[1000] mb-2 text-[#151875]">
                   Mauris at orci non vulputate diam tincidunt nec.
                 </h2>
-                <p className="text-[#8A8FB9] text-sm  font-bold">
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Velit
-                  facilisis quis auctor pretium ipsum, eu rutrum. Condimentum{" "}
-                  <br /> eu malesuada vitae ultrices in in neque, porta
-                  dignissim. Adipiscing purus, cursus vulputate id id dictum at.
-                </p>
-                <p>
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Velit
-                  dapibus est, nunc, montes, lacus consequat integer viverra.
-                  Sit morbi etiam quam rhoncus. Velit in arcu platea donec vitae
-                  ante posuere malesuada.Lorem ipsum dolor sit amet, consectetur
-                  adipiscing elit. Velit dapibus est, nunc, montes, lacus
-                  consequat integer viverra. Sit morbi etiam quam rhoncus. Velit
-                  in arcu platea donec vitae ante posuere malesuada.Lorem ipsum
-                  dolor sit amet, consectetur adipiscing elit. Velit dapibus
-                  est, nunc,
-                </p>
-                <p>
-                  “Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                  Commodo dictum sapien, amet, consequat. Lorem ipsum dolor sit
-                  amet, consectetur adipiscing elit. Commodo dictum sapien,
-                  amet, consequat toamk risusu”
-                </p>
-                <div className="flex">
+                <div className="text-[#8A8FB9] text-sm  font-bold">
+                  <p>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                    Velit facilisis quis auctor pretium ipsum, eu rutrum.
+                    Condimentum <br /> eu malesuada vitae ultrices in in neque,
+                    porta dignissim. Adipiscing purus, cursus vulputate id id
+                    dictum at.
+                  </p>
+                  <p className="pt-12">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                    Velit dapibus est, nunc, montes, lacus consequat integer
+                    viverra. Sit morbi etiam quam rhoncus. Velit in arcu platea
+                    donec vitae ante posuere malesuada.Lorem ipsum dolor sit
+                    amet, consectetur adipiscing elit. Velit dapibus est, nunc,
+                    montes, lacus consequat integer viverra. Sit morbi etiam
+                    quam rhoncus. Velit in arcu platea donec vitae ante posuere
+                    malesuada.Lorem ipsum dolor sit amet, consectetur adipiscing
+                    elit. Velit dapibus est, nunc,
+                  </p>
+                  <p className="pt-12">
+                    “Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                    Commodo dictum sapien, amet, consequat. Lorem ipsum dolor
+                    sit amet, consectetur adipiscing elit. Commodo dictum
+                    sapien, amet, consequat toamk risusu”
+                  </p>
+                </div>
+                <div className="flex gap-6 ">
                   <Image src="/SB1.png" alt="img" width={417.74} height={245} />
                   <Image src="/SB2.png" alt="img" width={417.74} height={245} />
                 </div>
-                <p>
+                <p className="text-[#8A8FB9] text-sm  font-bold pt-8">
                   Lorem ipsum dolor sit amet, consectetur adipiscing elit. Velit
                   dapibus est, nunc, montes, lacus consequat integer viverra.
                   Sit morbi etiam quam rhoncus. Velit in arcu platea donec vitae
@@ -155,12 +158,12 @@ const Blog = () => {
                   dolor sit amet, consectetur adipiscing elit. Velit dapibus
                   est, nunc,
                 </p>
-                <div className="flex">
+                <div className="flex gap-4">
                   {[
                     { title: "Quam sed", img: "SB3" },
-                    { title: "Quam sed", img: "SB4" },
-                    { title: "Quam sed", img: "SB5" },
-                    { title: "Quam sed", img: "SB6" },
+                    { title: "Tristique sed", img: "SB4" },
+                    { title: "A etiam", img: "SB5" },
+                    { title: "Mi nisi", img: "SB6" },
                   ].map((card, index) => (
                     <div key={index}>
                       <Image
@@ -169,46 +172,133 @@ const Blog = () => {
                         width={209.54}
                         height={254.7}
                       />
-                      <h4>{card.title}</h4>
-                      <p>
-                        <span>$32.00</span>
-                        <span>$56.00</span>
+                      <h4 className="text-[#000000] pl-4 mt-4">{card.title}</h4>
+                      <p className="text-xs my-3">
+                        <span className="text-[#232A69] mx-2 ">$32.00</span>
+                        <span className="text-[#FF38B0]">$56.00</span>
                         {/* <span></span> */}
                       </p>
                     </div>
                   ))}
                 </div>
-                <p>
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Velit
-                  dapibus est, nunc, montes, lacus consequat integer viverra.
-                  Sit morbi etiam quam rhoncus. Velit in arcu platea donec vitae
-                  ante posuere malesuada.Lorem ipsum dolor sit amet, consectetur
-                  adipiscing elit. Velit dapibus est, nunc, montes, lacus
-                  consequat integer viverra. Sit morbi etiam quam rhoncus. Velit
-                  in arcu platea donec vitae ante posuere malesuada.Lorem ipsum
-                  dolor sit amet, consectetur adipiscing elit. Velit dapibus
-                  est, nunc,
-                </p>
-                <p>
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Velit
-                  dapibus est, nunc, montes, lacus consequat integer viverra.
-                  Sit morbi etiam quam rhoncus. Velit in arcu platea donec vitae
-                  ante posuere malesuada.Lorem ipsum dolor sit amet, consectetur
-                  adipiscing elit. Velit dapibus est, nunc, montes, lacus
-                  consequat integer viverra. Sit morbi etiam quam rhoncus. Velit
-                  in arcu platea donec vitae ante posuere malesuada.Lorem ipsum
-                  dolor sit amet, consectetur adipiscing elit. Velit dapibus
-                  est, nunc,
-                </p>
-                {/* icons */}
-                <div className="flex">
+                <div className="text-[#8A8FB9] text-sm  font-bold">
+                  <p className="pt-6">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                    Velit dapibus est, nunc, montes, lacus consequat integer
+                    viverra. Sit morbi etiam quam rhoncus. Velit in arcu platea
+                    donec vitae ante posuere malesuada.Lorem ipsum dolor sit
+                    amet, consectetur adipiscing elit. Velit dapibus est, nunc,
+                    montes, lacus consequat integer viverra. Sit morbi etiam
+                    quam rhoncus. Velit in arcu platea donec vitae ante posuere
+                    malesuada.Lorem ipsum dolor sit amet, consectetur adipiscing
+                    elit. Velit dapibus est, nunc,
+                  </p>
+                  <p className="pt-8">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                    Velit dapibus est, nunc, montes, lacus consequat integer
+                    viverra. Sit morbi etiam quam rhoncus. Velit in arcu platea
+                    donec vitae ante posuere malesuada.Lorem ipsum dolor sit
+                    amet, consectetur adipiscing elit. Velit dapibus est, nunc,
+                    montes, lacus consequat integer viverra. Sit morbi etiam
+                    quam rhoncus. Velit in arcu platea donec vitae ante posuere
+                    malesuada.Lorem ipsum dolor sit amet, consectetur adipiscing
+                    elit. Velit dapibus est, nunc,
+                  </p>
+                </div>
+                <div className="flex gap-3 my-3 justify-center pt-10">
+                  <Link href="#" className="">
+                    <Image src="/F1.png" height={20} width={20} alt="img" />
+                    {/* <FaFacebook className="bg-purple-400 text-white" /> */}
+                  </Link>
+                  <Link href="#" className="">
+                    <Image src="/F2.png" height={20} width={20} alt="img" />
+                    {/* <RiInstagramFill className="bg-purple-400 text-white" /> */}
+                  </Link>
+                  <Link href="#" className="">
+                    <Image src="/F3.png" height={20} width={20} alt="img" />
+                    {/* <FaTwitter className="bg-purple-400 text-white" /> */}
+                  </Link>
+                </div>
+                <div className="flex bg-[#F7F8FB] justify-between text-[#8A8FB9] text-sm  font-bold h-10 items-center px-6">
                   <p>Previous Post</p>
                   <p>Next Post</p>
                 </div>
-                <div>
-                  <div>{/* <Image src="/" alt="img" /> */}</div>
-                  <div></div>
+                <div className="w-[667.68px] mt-16">
+                  <div className="flex shadow-lg shadow-[#00000040] items-center p-4">
+                    <Image
+                      src="/SB7.png"
+                      alt="img"
+                      width={103.16}
+                      height={106.56}
+                    />
+                    <div className="mx-3">
+                      <h1 className="font-extrabold text-lg">
+                        Sapien ac
+                        <span className="text-[#A3A2B6] text-xs mx-5">
+                          Jan 09 2020
+                        </span>
+                      </h1>
+                      <p className="text-[#A3A2B6] text-sm leading-8">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                        At in vitae rutrum vulputate consectetur.
+                      </p>
+                    </div>
+                  </div>
+                  <div className="flex shadow-lg shadow-[#00000040] items-center p-4">
+                    <Image
+                      src="/SB8.png"
+                      alt="img"
+                      width={103.16}
+                      height={106.56}
+                    />
+                    <div className="mx-3">
+                      <h1 className="font-extrabold text-lg">
+                        Augue conva
+                        <span className="text-[#A3A2B6] text-xs mx-5">
+                          Aug 18 2020
+                        </span>
+                      </h1>
+                      <p className="text-[#A3A2B6] text-sm leading-8">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                        At in vitae rutrum vulputate consectetur.
+                      </p>
+                    </div>
+                  </div>
                 </div>
+                <form>
+                  <div className="mt-20">
+                    <input
+                      type="text"
+                      placeholder="Your Name*"
+                      className="border-2 w-[315px] p-2 text-sm mr-10"
+                    />
+                    <input
+                      type="text"
+                      placeholder="Write Your Email*"
+                      className="border-2 w-[315px] p-2 text-sm"
+                    />
+                  </div>
+                  <textarea
+                    placeholder="Write your comment*"
+                    rows={10}
+                    className="border-2 w-[670px] text-sm mt-10 p-2"
+                  ></textarea>
+                  <div className="flex flex-col w-[670px]">
+                    <div className="my-4 mb-8">
+                      <input type="checkbox" />
+                      <label
+                        htmlFor="newsletter"
+                        className="text-[#8A91AB] text-sm ml-2"
+                      >
+                        Save my name, email, and website in this browser for the
+                        next time I comment.
+                      </label>
+                    </div>
+                    <button className="bg-[#FB2E86] text-white p-2">
+                      Continue Shipping
+                    </button>
+                  </div>
+                </form>
               </div>
             </div>
           </div>
@@ -356,7 +446,7 @@ const Blog = () => {
           </div>
         </div>
       </div>
-      <div className="flex justify-center mt-4">
+      {/* <div className="flex justify-center mt-4">
         <div className="flex gap-8">
           <div className="w-[25px] h-[22px] text-center text-white bg-[#FB2CA8] rounded-sm">
             1
@@ -371,7 +461,7 @@ const Blog = () => {
             4
           </div>
         </div>
-      </div>
+      </div> */}
       <Brands />
     </div>
   );
