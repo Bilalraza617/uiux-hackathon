@@ -1,35 +1,31 @@
 import Link from "next/link";
 import Image from "next/image";
-import Banner3 from "@/components/Banner3";
+import ShopHero from "@/components/ShopHero";
+import Brands from "@/components/Brands";
 
 const Custom404 = () => (
-  <div className=" items-center  bg-gray-100">
-    <Banner3 name="404 Not Found" />
-    <div className="bg-white p-6 rounded-lg shadow-lg text-center">
-      <div className="flex flex-col items-center mb-4">
+  <>
+    <ShopHero title="404 Not Found" />
+    <div className="flex flex-col items-center">
+      <div className="flex flex-col items-center  relative">
         <Image
           src="/404.png"
           alt="404 Illustration"
-          className="w-48 h-48 object-cover"
-          width={400}
-          height={400}
+          // className="w-48 h-48 object-cover"
+          width={913}
+          height={526.6}
         />
       </div>
-      <h1 className="text-3xl font-bold mb-2">
-        Oops! The page you requested was not found!
+      <h1 className="text-3xl text-[#152970]  font-bold absolute bottom-12 left-[410px]">
+        Oops!
       </h1>
-      <p className="text-gray-700 mb-4">
-        It looks like nothing was found at this location. Try using the
-        navigation or button below to get back on track.
-      </p>
-      <Link
-        href="/ "
-        className="bg-pink-600 text-white py-2 px-4 rounded-md hover:bg-pink-700"
-      >
+
+      <Link href="/ " className="bg-[#FB2E86] text-white py-2 px-6 rounded-md ">
         Back To Home
       </Link>
     </div>
-  </div>
+    <Brands />
+  </>
 );
 
 export default Custom404;
