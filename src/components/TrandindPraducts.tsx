@@ -46,7 +46,7 @@ const Trandingproducts = () => (
         </h1>
       </div>
 
-      <div className=" flex flex-wrap gap-5 mt-10 justify-center">
+      <div className=" flex flex-wrap md: gap-5 mt-10 justify-center">
         {trendingProducts.map((data: { image: string }, index) => (
           <div
             key={index}
