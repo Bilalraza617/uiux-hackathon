@@ -206,9 +206,7 @@ const Blog = () => {
                   <p>Next Post</p>
                 </div>
                 <div>
-                  <div>
-                    <Image src="/" alt="img" />
-                  </div>
+                  <div>{/* <Image src="/" alt="img" /> */}</div>
                   <div></div>
                 </div>
               </div>
