@@ -1,4 +1,5 @@
 import Banner2 from "@/components/Banner2";
+import ShopHero from "@/components/ShopHero";
 import Image from "next/image";
 import Link from "next/link";
 import React from "react";
@@ -49,21 +50,7 @@ const ShopGrid = () => {
   ];
   return (
     <>
-      <div className="bg-gray-100 h-80 flex flex-col items-center justify-center">
-        <div className="w-[60%]">
-          <h1
-            className="text-4xl font-extrabold text-[#101750]"
-            style={{ fontWeight: "800" }}
-          >
-            Sop Grid Default
-          </h1>
-          <p className="text-black">
-            Home . Pages{" "}
-            <span className="text-[#FB2E86]">. Shop Grid Default</span>
-          </p>
-        </div>
-      </div>
-
+      <ShopHero title="Grid Default" />
       <div className="bg-white flex items-center justify-between w-[60%] m-auto mt-40">
         <div>
           <h2 className="text-xl text-custumBlue font-bold">

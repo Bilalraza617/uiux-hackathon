@@ -22,9 +22,7 @@ const Header = () => {
                 {[
                   { text: "Single Blog", link: "single-blog" },
                   { text: "Hackto Demo", link: "hackto-demo" },
-                  { text: "Product Details", link: "product-details" },
                   { text: "Order Completed", link: "order-completed" },
-                  { text: "Shopping Cart", link: "shopping-cart" },
                   { text: "Shop List", link: "shop-list" },
                   { text: "Shop Left Sidebar", link: "shop-left-sidebar" },
                   { text: "Grid Default", link: "grid-default" },
