@@ -17,12 +17,12 @@ const item = [
 
 const Featuredproducts = () => {
   return (
-    <div className="my-32">
-      <h1 className="text-5xl  text-center font-extrabold">
+    <div className="mt-10 md:my-32">
+      <h1 className="text-2xl md:text-5xl  text-center font-extrabold">
         Featured Products
       </h1>
       <div className="">
-        <div className="flex items-center justify-center gap-7 my-10">
+        <div className="flex flex-wrap items-center justify-center gap-7 my-10">
           {item.map((data: { image: string }, index) => {
             return (
               <div

@@ -17,12 +17,12 @@ const features = [
 
 export default function Shopex() {
   return (
-    <div className=" py-12 text-[#151875]">
+    <div className=" py-5 md:py-12 text-[#151875]">
       <div>
-        <h2 className="text-5xl  text-center font-extrabold">
+        <h2 className="text-2xl md:text-5xl  text-center font-extrabold">
           What Shopex Offer!
         </h2>
-        <div className="mt-10 flex justify-center gap-7">
+        <div className="mt-10 flex flex-wrap justify-center gap-7">
           {features.map((feature, index) => (
             <div
               key={index}

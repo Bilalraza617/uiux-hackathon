@@ -3,7 +3,7 @@ import React from "react";
 
 const Baner = () => {
   return (
-    <div className="bg-[#F1F0FF] flex items-center justify-center">
+    <div className="bg-[#F1F0FF] flex flex-wrap items-center justify-center">
       <div className="">
         <Image
           src="/sofa2.png"
@@ -13,8 +13,8 @@ const Baner = () => {
           className=" object-cover "
         />
       </div>
-      <div className="w-[40%]">
-        <h2 className="text-4xl font-bold mb-4">
+      <div className=" px-2 md:w-[40%]">
+        <h2 className="md:text-4xl font-bold mb-4">
           Unique Features Of Latest & Trending Products
         </h2>
         <ul className="list-none ">
@@ -46,13 +46,13 @@ const Baner = () => {
             </div>
           ))}
         </ul>
-        <div className="flex gap-5  items-center mt-6">
-          <button className=" bg-[#FB2E86] text-white py-3 px-8 rounded ">
+        <div className="flex gap-5 justify-center md:justify-start  items-center mt-6">
+          <button className=" bg-[#FB2E86] text-white py-1 md:py-3 px-5 md:px-8 rounded ">
             Add To Cart
           </button>
-          <p className=" font-semibold">
+          <p className="text-xs md:text-lg md:font-semibold ">
             <strong>B&B Italian Sofa </strong>
-            <br />
+            <br className="hidden md:block" />
             $32.00
           </p>
         </div>

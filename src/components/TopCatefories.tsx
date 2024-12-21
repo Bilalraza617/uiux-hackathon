@@ -9,9 +9,9 @@ const categories = [
 ];
 
 const TopCategories = () => (
-  <div className="container mx-auto p-4">
+  <div className=" mx-auto pt-10  p-4">
     <h1 className="text-3xl font-bold mb-4 text-center">Top Categories</h1>
-    <div className="flex   justify-center ">
+    <div className="flex flex-wrap  justify-center ">
       {categories.map((category, index) => (
         <div
           key={index}

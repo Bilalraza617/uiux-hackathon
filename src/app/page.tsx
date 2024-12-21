@@ -15,7 +15,7 @@ export default function Home() {
       <div className="">
         <div className="bg-[#F2F0FF]  flex relative h-[500px] xl:h-[764px]">
           <div className="flex items-center">
-            <div className=" w-[40%] h-full flex justify-end items-start ">
+            <div className="hidden md:w-[40%] relative h-full md:flex justify-end items-start ">
               <Image
                 src="/light.png"
                 alt="img"
@@ -25,8 +25,8 @@ export default function Home() {
               />
             </div>
 
-            <div className="flex max-w-6xl mx-auto px-6 py-12 items-center justify-between">
-              <div className="max-w-md">
+            <div className="flex  px-6 py-12 md:text-start text-center items-center justify-between">
+              <div className="max-w-md absolute md:sticky  md:bg-transparent z-10">
                 <p className="text-sm text-pink-600">
                   Best Furniture For Your Castle...
                 </p>
@@ -42,18 +42,18 @@ export default function Home() {
                 </button>
               </div>
 
-              <div className="relative">
+              <div className="relative text-center opacity-6 ">
                 <Image
                   src="/sofa.png"
                   width={500}
                   height={500}
                   alt="img"
-                  className="w-[706px]"
+                  // className="w-[706px]"
                 />
               </div>
             </div>
           </div>
-          <div className="absolute  top-[92%] flex items-center gap-2 left-[50%]">
+          <div className="absolute text-center top-[92%] flex items-center gap-2 left-[50%]">
             <span className=" border-pink-500 w-2 h-2 rotate-45 bg-pink-500 border"></span>
             <span className="border border-pink-500 w-2 h-2 rotate-45"></span>
             <span className="border border-pink-500 w-2 h-2 rotate-45"></span>

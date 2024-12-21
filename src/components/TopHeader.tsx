@@ -7,11 +7,11 @@ import { PiShoppingCartSimpleLight } from "react-icons/pi";
 
 const TopHeader = () => {
   return (
-    <div className="bg-[#7E33E0]">
+    <div className="bg-[#7E33E0] hidden md:block">
       <div className="flex  items-center max-[1170px] w-[95%] m-auto font-semibold text-base  h-11  text-white">
         <div className="flex items-center justify-between  m-auto w-[1177px]">
-          <div className="flex items-center  w-[60%]">
-            <div className="flex items-center gap-3 mr-7">
+          <div className="flex items-center   w-[60%]">
+            <div className="flex items-center gap-3 mr-7 ">
               <FaRegEnvelope />
               <h3 className="text-base ">mhh.jawaid.ali@gmail.com</h3>
             </div>

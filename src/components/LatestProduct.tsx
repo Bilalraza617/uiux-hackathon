@@ -12,17 +12,17 @@ const item = [
 
 const LatestProducts = () => (
   <div>
-    <div className="container mx-auto p-4">
-      <h1 className="text-4xl leading-10 text-[#151875] text-center font-extrabold mb-3">
+    <div className=" mx-auto md:p-4">
+      <h1 className="text-2xl md:text-4xl leading-10 text-[#151875] text-center font-extrabold mb-3">
         Leatest Products
       </h1>
-      <div className="flex justify-center  mb-4">
-        <button className="px-4 py-2 underline text-[#FB2E86] rounded">
+      <div className="flex justify-center text-xs md:text-xl  mb-4">
+        <button className="px-4 py-2 underline text-[#FB2E86]">
           New Arrival
         </button>
-        <button className="px-4 py-2 text-[#151875]">Best Seller</button>
-        <button className="px-4 py-2 text-[#151875]">Featured</button>
-        <button className="px-4 py-2 text-[#151875]">Special Offer</button>
+        <button className="px-4 py-2 text-[#151875]  ">Best Seller</button>
+        <button className="px-4 py-2 text-[#151875] ">Featured</button>
+        <button className="px-4 py-2 text-[#151875] ">Special Offer</button>
       </div>
     </div>
 

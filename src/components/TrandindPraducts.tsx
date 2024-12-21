@@ -50,7 +50,7 @@ const Trandingproducts = () => (
         {trendingProducts.map((data: { image: string }, index) => (
           <div
             key={index}
-            className="flex flex-col gap-2 w-[270px] h-[350px] shadow-lg rounded-lg p-2   items-center"
+            className="flex flex-col gap-2 md:w-[270px] h-[350px] shadow-lg rounded-lg p-2   items-center"
           >
             <div className=" flex items-center  h-[244px] flex-col bg-[#F7F7F7] rounded">
               <Image
@@ -73,12 +73,12 @@ const Trandingproducts = () => (
           </div>
         ))}
       </div>
-      <div className="flex items-center gap-7 justify-center mt-10">
-        <div className="flex   gap-7">
+      <div className="flex flex-wrap items-center gap-7 justify-center mt-10">
+        <div className="flex  flex-wrap gap-7">
           {executiveSeats.map((seat, index) => (
             <div
               key={index}
-              className="p-5  rounded max-w-[420px] shadow-lg"
+              className="p-5  rounded w-full md:max-w-[420px] shadow-lg"
               style={{ backgroundColor: seat.bg }}
             >
               <h3 className="text-lg font-medium">23% off in all products</h3>

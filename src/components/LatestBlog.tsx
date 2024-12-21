@@ -9,12 +9,12 @@ const blogPosts = [
 ];
 
 const LatestBlog = () => (
-  <div className="mt-32">
+  <div className="md:mt-32">
     <div className=" py-12">
       <h2 className="text-3xl font-extrabold text-center ">Leatest Blog</h2>
     </div>
 
-    <div className="flex flex-wrap  gap-10 md:gap-2 xl:gap-12 justify-center items-center">
+    <div className="flex flex-wrap p-10 gap-10 md:gap-2 xl:gap-12 justify-center items-center">
       {blogPosts.map((data: { image: string; author: string }, index) => (
         <div
           key={index}
