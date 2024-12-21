@@ -20,7 +20,7 @@ const Custom404 = () => (
         Oops!
       </h1>
 
-      <Link href="/ " className="bg-[#FB2E86] text-white py-2 px-6 rounded-md ">
+      <Link href="/ " className="bg-[#FB2E86] text-white py-2 px-6 rounded ">
         Back To Home
       </Link>
     </div>

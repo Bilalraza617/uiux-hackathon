@@ -6,20 +6,10 @@ import React from "react";
 const Login = () => (
   <>
     <ShopHero title="My Account" />
-    <div className="flex justify-center items-center  ">
-      <div className=" shadow-md  flex flex-col text-center ">
-        <nav className="text-sm text-gray-600 mb-4">
-          <Link href="#" className="">
-            Login
-          </Link>
-          &gt;
-          <Link href="#" className="e">
-            Pages
-          </Link>
-          &gt; My Account
-        </nav>
-        <h2 className="text-2xl font-black mb-2">Login</h2>
-        <p className="mb-4 text-[#9096B2] tracking-tighter">
+    <div className="flex justify-center items-center  mt-20">
+      <div className=" shadow-2xl  flex flex-col text-center  px-15 p-10">
+        <h2 className="text-3xl font-black  ">Login</h2>
+        <p className="mb-4 text-[#9096B2] tracking-tighter text-xs font-bold">
           Please login using account detail bellow.
         </p>
         <form>
@@ -39,8 +29,8 @@ const Login = () => (
               className="w-full p-2 border border-[#C2C5E1] rounded mt-1 focus:outline-none"
             />
           </div>
-          <div className="flex justify-between items-center mb-4">
-            <Link href="#" className="text-[#C2C5E1] hover:underline">
+          <div className="flex justify-between items-center mb-2">
+            <Link href="#" className="text-[#C2C5E1] ">
               Forgot your password?
             </Link>
           </div>
